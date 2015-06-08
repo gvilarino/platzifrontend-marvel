@@ -3,6 +3,10 @@
 var $ = window.jQuery;
 var page = window.page;
 
+var homeTemplate = '<section class="Layout">\n        <section class="Layout-antagonist">\n          <div class="Card Card--antagonist">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n          <div class="Card Card--antagonist">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n          <div class="Card Card--antagonist">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n          <div class="Card Card--antagonist">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n          <div class="Card Card--antagonist">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n        </section>\n        <section class="Layout-main">\n          <div class="Layout-status"> \n            <div class="Status">\n              <h3 class="Status-player">Jeduan</h3>\n              <p class="Status-points">100000</p>\n            </div>\n            <div class="Status">\n              <h3 class="Status-player">Leonidas</h3>\n              <p class="Status-points">100000</p>\n            </div>\n          </div>\n          <div class="Layout-battle">\n            <div class="Battle">\n              <div class="Battle-antagonist">\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n              </div>\n              <div class="Battle-player">\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n                <div class="Card ">\n                  <div class="Card-container">\n                    <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n                    <div class="Card-description">Wolverine es muy poderoso</div>\n                    <div class="Card-attack">500 puntos de ataque</div>\n                  </div>\n                  <div class="Card-backface"> </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class="Layout-phases">\n            <div class="Phases">\n              <p>OMG ese ataque fue muy fuerte, le quitaste 300 puntos.</p>\n            </div>\n          </div>\n        </section>\n        <section class="Layout-player">\n          <div class="Card Card--player">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n          <div class="Card Card--player">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n          <div class="Card Card--player">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n          <div class="Card Card--player">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n          <div class="Card Card--player">\n            <div class="Card-container">\n              <h2 class="Card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="Card-image">\n              <div class="Card-description">Wolverine es muy poderoso</div>\n              <div class="Card-attack">500 puntos de ataque</div>\n            </div>\n            <div class="Card-backface"> </div>\n          </div>\n        </section>\n      </section>';
+
+var signinTemplate = '<label>Ingresa tu nombre</label>\n    <input type="text" id="firstName" name="firstName" tabindex="1" placeholder="gvilarino, juan, etc..." class="Signin-name-input"/>\n    <button tabindex="2" class="Signin-button">Comenzar</button>';
+
 // ya tenemos page
 
 page('/', restrict, home);
@@ -14,18 +18,13 @@ page('*', function () {
 });
 
 function restrict(ctx, next) {
-  console.log('RESTRICTING');
-  console.log('Context :' + JSON.stringify(ctx));
-  // if (! ctx.params.username) {
-  //   page('/signin')
-  // } else {
+  if (!window.user) return page('/signin');
+
   next();
-  // }
 }
 
 function home(ctx, next) {
-  console.log('Page navigating to: HOME');
-  console.log('Context :' + JSON.stringify(ctx));
+  $('.container').html($(homeTemplate));
 }
 
 function battle(ctx, next) {
@@ -38,16 +37,17 @@ function avengers(ctx, next) {
   console.log('Context :' + JSON.stringify(ctx));
 }
 
-function signin(ctx, next) {}
+function signin(ctx, next) {
+  $('.container').html(signinTemplate);
+  $('.Signin-button').on('click', function (event) {
+    event.preventDefault();
+    var username = $('.Signin-name-input')[0].value;
+    if (!username) return alert('Ingresa un nombre válido');
+    window.user = { username: username };
+    page('/');
+  });
+}
 
-$('.Signin-button').on('click', function (event) {
-  event.preventDefault();
-  var username = $('.Signin-name-input')[0].value;
-  console.log('USERNAME: ' + username);
-  username ? page('/?username=' + username) : page('/signin?reason=no_username');
-});
-// window.location = '/'
+page({ hashbang: true });
 // window.location = '/battle'
 // window.location = '/avengers'
-
-// window.location = '/signin'
