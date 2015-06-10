@@ -24,6 +24,8 @@ console.log('Building for: ', production ? 'production' : 'development')
 var watchify = require('watchify')
 var assign = require('lodash.assign')
 
+var gutil = require('gulp-util')
+
 gulp.task('styl', function () {
   return gulp.src('./lib/app.styl')
     .pipe(stylus({ use: nib() }))
@@ -38,19 +40,25 @@ var opts = {
   }
 
 gulp.task('watch', function () {
-  // Not working!
-  var b = watchify(browserify(opts))
-  b.on('update', bundle)
 
-  return b
+  var w = watchify(browserify(opts))
+  w.on('update', function (file) {
+    generateBundle(w)
+  })
+
+  w.on('log', gutil.log);
+
+  return generateBundle(w)
 })
 
 
-gulp.task('build', function () {
-  return bundle(browserify(opts))
+gulp.task('build', ['styl', 'js'])
+
+gulp.task('js', function () {
+  return generateBundle(browserify(opts))
 })
 
-function bundle(b) {
+function generateBundle(b) {
   return b.bundle()
   .pipe(source('app.js')) // The destination file name
   .pipe(buffer())
