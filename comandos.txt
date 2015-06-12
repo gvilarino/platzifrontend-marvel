@@ -45,3 +45,20 @@ ylus -u nib  -w -c -o  ../public/css/ app.styl
   watching /usr/local/lib/node_modules/stylus/lib/functions/index.styl
   watching card/styles.styl
   compiled ../publ
+
+
+/**
+ * Node
+ */
+
+nodejs.org
+
+La mejor manera de usar node es con nvm (necesita linux o mac)
+
+Instalación:
+curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+o
+$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
+
+https://github.com/creationix/nvm
+nvm install 0.12
